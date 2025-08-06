@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charity Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .donation-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #00675b;
+        }
+
+        .donation-options {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .donation-options button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .donation-options button:hover {
+            background-color: #00796b;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #008080;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #005f5f;
+        }
+
+        footer {
+            background-color: #eee;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .donation-options button {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Charity Donation</h1>
+    <p>Your small help can make a big difference</p>
+</header>
+
+<div class="container">
+    <img class="donation-image" src="c:\Users\NEVIN\Desktop\hands.png" alt="Helping Hands">
+
+    <h2>Why Donate?</h2>
+    <p>We support underprivileged children, education for all, and emergency relief.</p>
+
+    <div class="donation-options">
+        <h3>Quick Donate:</h3>
+        <button>₹100</button>
+        <button>₹500</button>
+        <button>₹750</button>
+        <button>₹1000</button>
+        <button>Other</button>
+    </div>
+
+    <h3>Fill in your details</h3>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your email" required>
+
+        <label for="amount">Donation Amount (₹):</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" rows="4" placeholder="Your message..."></textarea>
+
+        <input type="submit" value="Donate Now">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hope for All Foundation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
